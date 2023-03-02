@@ -26,7 +26,7 @@ efficientnet = EfficientNet().to(device)
 inceptionv3 = InceptionV3().to(device)
 resnet50 = ResNet50().to(device)
 vgg16 = VGG16().to(device)
-ensemblenet = EnsembleNet(efficientnet, inceptionv3, resnet50, vgg16).to(device)
+ensemblenet = EnsembleNet().to(device)
 
 # Define the loss function and optimizer
 criterion = nn.CrossEntropyLoss()
