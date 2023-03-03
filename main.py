@@ -4,7 +4,7 @@ import torch.optim as optim
 from torch.utils.data import DataLoader
 from dataset import load_datasets
 from models.efficientnet import EfficientNet
-from models.inceptionv3 import InceptionV3
+from models.inceptionv3 import Inceptionv3
 from models.resnet50 import ResNet50
 from models.vgg16 import VGG16
 from models.ensemblenet import EnsembleNet
@@ -23,7 +23,7 @@ train_loader, valid_loader, test_loader = load_datasets()
 
 # Define the models
 efficientnet = EfficientNet().to(device)
-inceptionv3 = InceptionV3().to(device)
+inceptionv3 = Inceptionv3().to(device)
 resnet50 = ResNet50().to(device)
 vgg16 = VGG16().to(device)
 ensemblenet = EnsembleNet().to(device)
